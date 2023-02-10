@@ -11,4 +11,11 @@
     <br />
     <br />
     <asp:Button runat="server" ID="confirmabtn" OnClick="confirmabtn_Click" Text="Confirmar"/>
+    <br />
+    <body>
+        <p style="color:red;">
+            <asp:Label runat="server" ID="lblStatus" Text=" "></asp:Label>
+        </p>
+    </body>
+   
 </asp:Content>

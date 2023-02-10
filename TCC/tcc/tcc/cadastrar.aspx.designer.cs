@@ -10,7 +10,7 @@
 namespace tcc {
     
     
-    public partial class Login {
+    public partial class cadastrar2 {
         
         /// <summary>
         /// Controle emailtxt.
@@ -31,21 +31,21 @@ namespace tcc {
         protected global::System.Web.UI.WebControls.TextBox senhatxt;
         
         /// <summary>
-        /// Controle confirmabtn.
+        /// Controle confsenha.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button confirmabtn;
+        protected global::System.Web.UI.WebControls.TextBox confsenha;
         
         /// <summary>
-        /// Controle lblStatus.
+        /// Controle confisenha.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStatus;
+        protected global::System.Web.UI.WebControls.Button confisenha;
     }
 }

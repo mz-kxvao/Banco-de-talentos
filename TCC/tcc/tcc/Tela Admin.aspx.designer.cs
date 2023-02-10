@@ -10,42 +10,33 @@
 namespace tcc {
     
     
-    public partial class Login {
+    public partial class Tela_Admin {
         
         /// <summary>
-        /// Controle emailtxt.
+        /// Controle areadeatuacaodrop.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailtxt;
+        protected global::System.Web.UI.WebControls.DropDownList areadeatuacaodrop;
         
         /// <summary>
-        /// Controle senhatxt.
+        /// Controle areadeatuacao.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox senhatxt;
+        protected global::System.Web.UI.WebControls.DropDownList areadeatuacao;
         
         /// <summary>
-        /// Controle confirmabtn.
+        /// Controle btnFiltro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button confirmabtn;
-        
-        /// <summary>
-        /// Controle lblStatus.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStatus;
+        protected global::System.Web.UI.WebControls.Button btnFiltro;
     }
 }
