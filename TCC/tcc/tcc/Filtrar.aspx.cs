@@ -20,10 +20,16 @@ namespace tcc
         {
             connection.Open();
 
-            var comando = new MySqlCommand($"SELECT * FROM `candidato` WHERE (areadeatuacao = @areadeatuacao) ", connection);
+            var comando = new MySqlCommand($"SELECT * FROM `candidato` WHERE (areadeatuacao = @areadeatuacao), (escolaridade = @escolaridade), (cidade = @cidade), (estado = @estado), (EmpresaAtual = @EmpresaAtual) ", connection);
             comando.Parameters.Add(new MySqlParameter("areadeatuacao", areadeatuacaodrop.SelectedItem.Text));
+            comando.Parameters.Add(new MySqlParameter("escolaridade", escolaridadedrop.SelectedItem.Text));
+            comando.Parameters.Add(new MySqlParameter("cidade", cidadetxt.Text));
+            comando.Parameters.Add(new MySqlParameter("estado", estadotxt.Text));
+            comando.Parameters.Add(new MySqlParameter("EmpresaAtual", empresaatual.Text));
             comando.ExecuteNonQuery();
             
+
+
         }
     }
 }

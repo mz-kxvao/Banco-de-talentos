@@ -22,7 +22,11 @@
     <asp:TextBox runat="server" ID="cidadetxt"></asp:TextBox>
     <br />
     <br />
-   Area de Atuação: <asp:DropDownList runat="server" ID="areadeatuacaodrop">
+    Empresa atual:
+    <asp:TextBox runat="server" ID="empresaatual"></asp:TextBox>
+    <br />
+    <br />
+    Area de Atuação: <asp:DropDownList runat="server" ID="areadeatuacaodrop">
         <asp:ListItem Text=""></asp:ListItem>
         <asp:ListItem Text="Engenharia Biomédica"></asp:ListItem>
         <asp:ListItem Text="Engenharia Civil"></asp:ListItem>
