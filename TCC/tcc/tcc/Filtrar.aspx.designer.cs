@@ -10,34 +10,7 @@
 namespace tcc {
     
     
-    public partial class Cadastro {
-        
-        /// <summary>
-        /// Controle nometxt.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nometxt;
-        
-        /// <summary>
-        /// Controle emailtxt.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailtxt;
-        
-        /// <summary>
-        /// Controle telefonetxt.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox telefonetxt;
+    public partial class Tela_Admin {
         
         /// <summary>
         /// Controle estadotxt.
@@ -67,15 +40,6 @@ namespace tcc {
         protected global::System.Web.UI.WebControls.TextBox empresaatual;
         
         /// <summary>
-        /// Controle areadeatuacaodrop.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList areadeatuacaodrop;
-        
-        /// <summary>
         /// Controle escolaridadedrop.
         /// </summary>
         /// <remarks>
@@ -85,12 +49,21 @@ namespace tcc {
         protected global::System.Web.UI.WebControls.DropDownList escolaridadedrop;
         
         /// <summary>
-        /// Controle confirmabtn.
+        /// Controle areadeatuacaodrop.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button confirmabtn;
+        protected global::System.Web.UI.WebControls.DropDownList areadeatuacaodrop;
+        
+        /// <summary>
+        /// Controle btnFiltro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFiltro;
     }
 }

@@ -37,7 +37,7 @@ namespace tcc
         {
             connection.Open();
 
-            var commando = new MySqlCommand($"UPDATE `candidato` SET nome = @nome, areadeatuacao = @areadeatuacao,telefone = @telefone,escolaridade = @escolaridade,cidade = @cidade,estado = @estado WHERE email = @email", connection);
+            var commando = new MySqlCommand($"UPDATE `candidato` SET nome = @nome, areadeatuacao = @areadeatuacao,telefone = @telefone,escolaridade = @escolaridade,cidade = @cidade,estado = @estado, EmpresaAtual = @EmpresaAtual = WHERE email = @email", connection);
             commando.Parameters.Add(new MySqlParameter("escolaridade", escolaridadedrop.SelectedItem.Text));
             commando.Parameters.Add(new MySqlParameter("areadeatuacao", areadeatuacaodrop.SelectedItem.Text));
             commando.Parameters.Add(new MySqlParameter("nome", nometxt.Text));
@@ -45,6 +45,7 @@ namespace tcc
             commando.Parameters.Add(new MySqlParameter("email", emailtxt.Text));
             commando.Parameters.Add(new MySqlParameter("estado", estadotxt.Text));
             commando.Parameters.Add(new MySqlParameter("cidade", cidadetxt.Text));
+            commando.Parameters.Add(new MySqlParameter("empresaatual", telefonetxt.Text));
             commando.ExecuteNonQuery();
             connection.Close();
         }
