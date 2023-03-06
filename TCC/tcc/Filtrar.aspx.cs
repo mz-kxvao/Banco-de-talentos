@@ -20,7 +20,7 @@ namespace tcc
 
         protected void btnFiltro_Click(object sender, EventArgs e)
         {
-            var clientes = new Negocio.Candidato().Read("", nometxt.Text, areadeatuacaodrop.SelectedValue, escolaridadedrop.SelectedValue, cidadetxt.Text, estadotxt.Text, empresaatual.Text);
+            var clientes = new Negocio.Candidato().Read("", nometxt.Text,areadeatuacaodrop.SelectedValue, escolaridadedrop.SelectedValue, cidadetxt.Text, estadotxt.Text, empresaatual.Text);
             Session["dados"] = clientes;
             grdClientes.DataSource = clientes;
             grdClientes.DataBind();
@@ -33,11 +33,15 @@ namespace tcc
 
             if (e.CommandName == "Perfil")
             {
-                Response.Redirect("Perfil.aspx?id=" + clientes[index].Id+1);
+                
+                
+                    Response.Redirect("Perfil.aspx?id=" + clientes[index].id);
+                
+                
             }
 
             
-        }
+        } 
 
         protected void grdClientes_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {

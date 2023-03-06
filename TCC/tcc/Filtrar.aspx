@@ -29,7 +29,7 @@
         <br />
      <asp:DropDownList runat="server" ID="escolaridadedrop" >
         <asp:ListItem Text=""></asp:ListItem>
-        <asp:ListItem Text="Ensino Fundamental"></asp:ListItem>
+        <asp:ListItem Text="Ensino Fundamental" ></asp:ListItem>
         <asp:ListItem Text="Ensino Fundamental Completo"></asp:ListItem>
         <asp:ListItem Text="Ensino Medio"></asp:ListItem>
         <asp:ListItem Text="Ensino Medio Completo"></asp:ListItem>

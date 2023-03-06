@@ -29,7 +29,13 @@ namespace tcc.Negocio
                  connection.Open();
 
 
-                 var comando = new MySqlCommand($"SELECT nome FROM `candidato` WHERE (1=1) ", connection);
+                 var comando = new MySqlCommand($"SELECT * FROM `candidato` WHERE (1=1) ", connection);
+
+                if(id.Equals("") == false)
+                {
+                    comando.CommandText += $" AND id like @id";
+                    comando.Parameters.Add(new MySqlParameter("id", $"%{id}%"));
+                }
 
                 if (nome.Equals("") == false)
                 {
@@ -39,13 +45,13 @@ namespace tcc.Negocio
 
                 if (areadeatuacaodrop.Equals("") == false)
                  {
-                     comando.CommandText += " AND (areadeatuacao = @areadeatuacao) ";
+                     comando.CommandText += " AND (areadeatuacao like @areadeatuacao) ";
                      comando.Parameters.Add(new MySqlParameter("areadeatuacao", $"%{areadeatuacaodrop}%"));
                  }
 
                  if (escolaridadedrop.Equals("") == false)
                  {
-                     comando.CommandText += " AND (escolaridade = @escolaridade) ";
+                     comando.CommandText += " AND (escolaridade like @escolaridade) ";
                      comando.Parameters.Add(new MySqlParameter("escolaridade", $"%{escolaridadedrop}%"));
                  }
 
@@ -66,8 +72,25 @@ namespace tcc.Negocio
                      comando.CommandText += " AND (EmpresaAtual = @EmpresaAtual) ";
                      comando.Parameters.Add(new MySqlParameter("EmpresaAtual", $"%{empresaatual}%"));
                  }
+                var reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    clientes.Add(new classe.Candidato
+                    {
+                        id = reader.GetInt32("id"),
+                        nome = reader.GetString("nome"),
+                        areadeatuacaodrop = reader.GetString("areadeatuacao"),
+                        escolaridadedrop = reader.GetString("escolaridade"),
+                        cidadetxt = reader.GetString("cidade"),
+                        estadotxt = reader.GetString("estado"),
+                        empresaatual = reader.GetString("EmpresaAtual")
+                    });
+
+
+
+                }
              }
-             catch
+             catch(Exception err)
              {
 
              }
