@@ -11,7 +11,19 @@ namespace tcc
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                var id = Request.QueryString["id"].ToString();
+                var cliente = new Negocio.Candidato().Read(id);
+                
+                nometxt.Text = cliente.nome;
+                areadeatuacaotxt.Text = cliente.areadeatuacaodrop;
+                empresaatual.Text = cliente.empresaatual;
+                escolaridadetxt.Text = cliente.escolaridadedrop;
+                cidadetxt.Text = cliente.cidadetxt;
+                estadotxt.Text = cliente.estadotxt;
+                
+            }
         }
     }
 }
