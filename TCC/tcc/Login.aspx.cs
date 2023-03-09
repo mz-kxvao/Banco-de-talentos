@@ -48,20 +48,23 @@ namespace tcc
                 if (reader.Read())
                 {
                     Response.Redirect("/Registro.aspx?email=" + emailtxt.Text);
+                    
                 }
-               
-               
+                
+
+                
                 else
                 {
-                   
-                    connection.Open();
-                    
-                    comando = new MySqlCommand($"SELECT * FROM admin WHERE (email = @email) AND senha = MD5(@senha)", connection);
+
+                connection.Close();
+                connection.Open();
+
+                comando = new MySqlCommand($"SELECT * FROM admin WHERE (email = @email) AND senha = MD5(@senha)", connection);
                     comando.Parameters.Add(new MySqlParameter("email", emailtxt.Text));
                     comando.Parameters.Add(new MySqlParameter("senha", senhatxt.Text));
-                    var reader1 = comando.ExecuteReader();
+                    reader = comando.ExecuteReader();
                     
-                    if (reader1.Read())
+                    if (reader.Read())
                     {
 
                         Response.Redirect("/Filtrar.aspx?");
@@ -75,7 +78,7 @@ namespace tcc
                     connection.Close();
                 }
         
-            connection.Open();
+           
 
            
             

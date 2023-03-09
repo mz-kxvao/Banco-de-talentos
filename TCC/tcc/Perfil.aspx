@@ -28,6 +28,10 @@
     Estado:
     <br />
     <asp:TextBox runat="server" ID="estadotxt"></asp:TextBox>
+    <asp:Button runat="server" ID="anexo" OnClick="anexo_Click" Text="Ver Currículo" />
+
+
+
 
     
 </asp:Content>

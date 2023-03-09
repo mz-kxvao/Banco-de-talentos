@@ -47,6 +47,14 @@
     </asp:DropDownList>
     <br />
     <br />
-    <asp:Button runat="server" ID="confirmabtn" OnClick="confirmabtn_Click" Text="Comfirmar"/>
+    <asp:FileUpload CssClass="capa" ID="FileUpload2" AllowMultiple="false" accept="image/*" runat="server" />
+    <br />
+    <body>
+        <p style="color:red;">
+            <asp:Label runat="server" ID="lblStatus" Text=" "></asp:Label>
+        </p>
+    </body>
+    <br />
+    <asp:Button runat="server" ID="confirmabtn" OnClick="confirmabtn_Click" Text="Confirmar"/>
 
 </asp:Content>

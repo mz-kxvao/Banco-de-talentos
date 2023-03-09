@@ -22,6 +22,15 @@ namespace tcc {
         protected global::System.Web.UI.WebControls.TextBox emailtxt;
         
         /// <summary>
+        /// Controle lblStatus.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStatus;
+        
+        /// <summary>
         /// Controle senhatxt.
         /// </summary>
         /// <remarks>

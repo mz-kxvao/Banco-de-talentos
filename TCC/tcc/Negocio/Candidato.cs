@@ -72,6 +72,7 @@ namespace tcc.Negocio
                      comando.CommandText += " AND (EmpresaAtual = @EmpresaAtual) ";
                      comando.Parameters.Add(new MySqlParameter("EmpresaAtual", $"%{empresaatual}%"));
                  }
+                
                 var reader = comando.ExecuteReader();
                 while (reader.Read())
                 {
@@ -83,7 +84,8 @@ namespace tcc.Negocio
                         escolaridadedrop = reader.GetString("escolaridade"),
                         cidadetxt = reader.GetString("cidade"),
                         estadotxt = reader.GetString("estado"),
-                        empresaatual = reader.GetString("EmpresaAtual")
+                        empresaatual = reader.GetString("EmpresaAtual"),
+                        anexo = reader.GetString("anexo")
                     });
 
 
