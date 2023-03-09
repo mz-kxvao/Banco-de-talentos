@@ -13,6 +13,7 @@ namespace tcc.classe
         public string cidadetxt { get; set; }
         public string estadotxt { get; set; }
         public string empresaatual { get; set; }
+        public string anexo { get; set; }
         public int id { get; set; }
     }
 }

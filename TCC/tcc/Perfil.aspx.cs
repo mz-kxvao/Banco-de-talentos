@@ -9,6 +9,8 @@ namespace tcc
 {
     public partial class Perfil : System.Web.UI.Page
     {
+        public static string curriculo;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -22,8 +24,14 @@ namespace tcc
                 escolaridadetxt.Text = cliente.escolaridadedrop;
                 cidadetxt.Text = cliente.cidadetxt;
                 estadotxt.Text = cliente.estadotxt;
+                curriculo = cliente.anexo;
                 
             }
+        }
+
+        protected void anexo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Curriculos/" + curriculo);
         }
     }
 }

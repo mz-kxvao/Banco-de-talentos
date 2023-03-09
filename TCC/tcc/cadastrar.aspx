@@ -6,6 +6,11 @@
     <br />
     <asp:TextBox runat="server" ID ="emailtxt"></asp:TextBox>
     <br />
+    <body>
+        <p style="color:red;">
+            <asp:Label runat="server" ID="lblStatus" Text=" "></asp:Label>
+        </p>
+    </body>
     <br />
     Senha:
     <br />

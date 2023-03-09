@@ -18,19 +18,40 @@ namespace tcc
 
         protected void confisenha_Click(object sender, EventArgs e)
         {
+            
             connection.Open();
-
-            if(senhatxt.Text == confsenha.Text)
+            var commando = new MySqlCommand($"SELECT * FROM `candidato` WHERE email = @email", connection);
+            commando.Parameters.Add(new MySqlParameter("email", emailtxt.Text));
+           var reader =  commando.ExecuteReader();
+            if (reader.Read())
             {
-                var comando = new MySqlCommand($"INSERT INTO candidato (email,senha) VALUES (@email,MD5(@senha))", connection);
-                comando.Parameters.Add(new MySqlParameter("email", emailtxt.Text));
-                comando.Parameters.Add(new MySqlParameter("senha", senhatxt.Text));
-                comando.ExecuteNonQuery();
+                lblStatus.Text = "email ja usado!";
+                
+            }
+            
+            else
+            {
+                connection.Close();
+
+                if (senhatxt.Text == confsenha.Text)
+                {
+                    connection.Open();
+
+                    var comando = new MySqlCommand($"INSERT INTO candidato (email,senha) VALUES (@email,MD5(@senha))", connection);
+                    comando.Parameters.Add(new MySqlParameter("email", emailtxt.Text));
+                    comando.Parameters.Add(new MySqlParameter("senha", senhatxt.Text));
+                    comando.ExecuteNonQuery();
+
+                    Response.Redirect("/Login.aspx?email=" + emailtxt.Text);
+                    connection.Close();
+                }
+                
             }
 
-            connection.Close();
 
-            Response.Redirect("/Login.aspx?email=" + emailtxt.Text);
+
+
+           
             
         }
     }
