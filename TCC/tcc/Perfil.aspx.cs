@@ -19,6 +19,7 @@ namespace tcc
                 var cliente = new Negocio.Candidato().Read(id);
                 
                 nometxt.Text = cliente.nome;
+                emailtxt.Text = cliente.email;
                 areadeatuacaotxt.Text = cliente.areadeatuacaodrop;
                 empresaatual.Text = cliente.empresaatual;
                 escolaridadetxt.Text = cliente.escolaridadedrop;

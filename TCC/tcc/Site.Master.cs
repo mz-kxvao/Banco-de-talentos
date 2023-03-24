@@ -10,7 +10,7 @@ namespace tcc
     public partial class SiteMaster : MasterPage
     {
 
-        public static string ConnectionString = "Server=127.0.0.1;User ID=root;Password=;Database=bancodetalentos1";
+        public static string ConnectionString = "Server=mysql8003.site4now.net;User ID=a95eb7_tcc;Password=joao1234;Database=db_a95eb7_tcc";
         protected void Page_Load(object sender, EventArgs e)
         {
 

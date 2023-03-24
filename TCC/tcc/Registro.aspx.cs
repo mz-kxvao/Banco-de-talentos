@@ -51,8 +51,8 @@ namespace tcc
             if(anexo.Equals("") == false)
             {
                 var commando = new MySqlCommand($"UPDATE `candidato` SET nome = @nome, areadeatuacao = @areadeatuacao,telefone = @telefone,escolaridade = @escolaridade,cidade = @cidade,estado = @estado, EmpresaAtual = @EmpresaAtual, anexo = @anexo WHERE email = @email", connection);
-                commando.Parameters.Add(new MySqlParameter("escolaridade", escolaridadedrop.SelectedItem.Text));
-                commando.Parameters.Add(new MySqlParameter("areadeatuacao", areadeatuacaodrop.SelectedItem.Text));
+                commando.Parameters.Add(new MySqlParameter("escolaridade", escolaridadedrop.SelectedValue));
+                commando.Parameters.Add(new MySqlParameter("areadeatuacao", areadeatuacaodrop.SelectedValue));
                 commando.Parameters.Add(new MySqlParameter("nome", nometxt.Text));
                 commando.Parameters.Add(new MySqlParameter("telefone", telefonetxt.Text));
                 commando.Parameters.Add(new MySqlParameter("email", emailtxt.Text));

@@ -18,10 +18,10 @@ namespace tcc.Negocio
 
          public classe.Candidato Read(string id)
          {
-             return this.Read(id, "","","","","","").FirstOrDefault();
+             return this.Read(id, "","","","","","","").FirstOrDefault();
          }
 
-         public List<classe.Candidato> Read(string id, string nome, string areadeatuacaodrop, string escolaridadedrop,string cidadetxt,string estadotxt, string empresaatual)
+         public List<classe.Candidato> Read(string id, string nome, string email, string areadeatuacaodrop, string escolaridadedrop,string cidadetxt,string estadotxt, string empresaatual)
          {
              var clientes = new List<classe.Candidato>();
              try
@@ -41,6 +41,12 @@ namespace tcc.Negocio
                 {
                     comando.CommandText += $" AND nome like @nome";
                     comando.Parameters.Add(new MySqlParameter("nome", $"%{nome}%"));
+                }
+
+                if (nome.Equals("") == false)
+                {
+                    comando.CommandText += $" AND nome like @email";
+                    comando.Parameters.Add(new MySqlParameter("email", $"%{email}%"));
                 }
 
                 if (areadeatuacaodrop.Equals("") == false)
@@ -63,13 +69,13 @@ namespace tcc.Negocio
 
                  if (estadotxt.Equals("") == false)
                  {
-                     comando.CommandText += " AND (estado = @estado) ";
+                     comando.CommandText += " AND (estado like @estado) ";
                      comando.Parameters.Add(new MySqlParameter("estado", $"%{estadotxt}%"));
                  }
 
                  if (empresaatual.Equals("") == false)
                  {
-                     comando.CommandText += " AND (EmpresaAtual = @EmpresaAtual) ";
+                     comando.CommandText += " AND (EmpresaAtual like @EmpresaAtual) ";
                      comando.Parameters.Add(new MySqlParameter("EmpresaAtual", $"%{empresaatual}%"));
                  }
                 
@@ -80,6 +86,7 @@ namespace tcc.Negocio
                     {
                         id = reader.GetInt32("id"),
                         nome = reader.GetString("nome"),
+                        email = reader.GetString("email"),
                         areadeatuacaodrop = reader.GetString("areadeatuacao"),
                         escolaridadedrop = reader.GetString("escolaridade"),
                         cidadetxt = reader.GetString("cidade"),

@@ -3,11 +3,13 @@
     <br />
     <br />
     Email:
+    <br />
     <asp:TextBox runat="server" ID ="emailtxt"></asp:TextBox>
     <br />
     <br />
     Senha:
-    <asp:TextBox runat="server" ID="senhatxt"></asp:TextBox>
+    <br />
+    <asp:TextBox runat="server" ID="senhatxt" TextMode="Password"></asp:TextBox>
     <br />
     <br />
     <asp:Button runat="server" ID="confirmabtn" OnClick="confirmabtn_Click" Text="Confirmar"/>

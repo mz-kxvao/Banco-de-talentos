@@ -1,6 +1,4 @@
-body{
-    background-color: $maincolor2;
-}
+
 .form {
     top: 30%;
     left: 30%;
@@ -18,14 +16,14 @@ body{
       font-size: 35px;
       font-weight: 400;
       font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
-      margin-top: 5%;
+      margin-top: 2%;
       font-weight: bold ;
     }
-    input {
+    .texto {
       outline: none;
       display: block;
-      width: 35%;
-      margin-left: 35%;
+      width: 100%;
+      margin-left: 515px;
       padding: 10px 15px;
       border: 1px solid #ccc;
       color: #ccc;
@@ -38,7 +36,7 @@ body{
       transition: 0.2s linear;
       margin-bottom: 10px;
     }
-    button {
+    .botao {
       cursor: pointer;
       background: #44c4e7;
       width: 25%;
@@ -52,4 +50,3 @@ body{
       margin-left: 35%;
 
     }
-  
