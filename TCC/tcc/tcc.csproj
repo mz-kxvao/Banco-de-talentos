@@ -131,6 +131,7 @@
     <Content Include="About.aspx" />
     <Content Include="cadastrar.aspx" />
     <Content Include="filtro.css" />
+    <Content Include="login.css" />
     <Content Include="Perfil.aspx" />
     <Content Include="perfil.css" />
     <Content Include="Registro.aspx" />
