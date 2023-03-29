@@ -24,7 +24,7 @@ body{
       outline: none;
       display: block;
       width: 35%;
-      margin-left: 35%;
+      
       padding: 10px 15px;
       border: 1px solid #ccc;
       color: #ccc;
@@ -66,7 +66,7 @@ body{
     font-family: "Roboto";
     font-size: 20px;
     font-weight: 400;
-    margin-top: 1%;
-    margin-left: 35%;
+    margin-top: 0.5%;
+   
 }
   

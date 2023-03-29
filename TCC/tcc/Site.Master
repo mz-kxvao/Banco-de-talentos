@@ -61,7 +61,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Meu aplicativo ASP.NET</p>
+                <p style="margin-left:30%">&copy; <%: DateTime.Now.Year %> - Banco de Talentos - Versão 1.0 | Todos os Direitos Reservados</p>
             </footer>
         </div>
 

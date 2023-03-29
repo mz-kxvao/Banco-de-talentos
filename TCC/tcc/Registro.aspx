@@ -6,19 +6,19 @@
     <link href="style.css" rel="stylesheet" />
     
     <h2>Completar Cadastro</h2>
-    <asp:TextBox style="margin-left: 38%;" ForeColor="Black" class="textos" runat="server" ID="nometxt" placeholder="Nome Completo"> </asp:TextBox>
+    <asp:TextBox style="margin-left: 39.5%;" ForeColor="Gray" class="textos" runat="server" ID="nometxt" placeholder="Nome Completo"> </asp:TextBox>
 
-    <asp:TextBox style="margin-left: 38%;" class="textos" runat="server" ID="emailtxt" placeholder="Email"></asp:TextBox>
+    <asp:TextBox style="margin-left: 39.5%;" class="textos" runat="server" ID="emailtxt"  ForeColor="Gray" placeholder="Email"></asp:TextBox>
 
-    <asp:TextBox style="margin-left: 38%;" class="textos" runat="server" ID="telefonetxt" placeholder="Telefone"></asp:TextBox>
+    <asp:TextBox style="margin-left: 39.5%;" class="textos" runat="server" ID="telefonetxt" ForeColor="Gray" placeholder="Telefone"></asp:TextBox>
 
-    <asp:TextBox style="margin-left: 38%;" class="textos" runat="server" ID="estadotxt" placeholder="Estado"></asp:TextBox>
+    <asp:TextBox style="margin-left: 39.5%;" class="textos" runat="server" ID="estadotxt" ForeColor="Gray" placeholder="Estado"></asp:TextBox>
 
-    <asp:TextBox style="margin-left: 38%;" class="textos" runat="server" ID="cidadetxt" placeholder="Cidade"> </asp:TextBox>
+    <asp:TextBox style="margin-left: 39.5%;" class="textos" runat="server" ID="cidadetxt" ForeColor="Gray" placeholder="Cidade"> </asp:TextBox>
 
-    <asp:TextBox style="margin-left: 38%;" class="textos" runat="server" ID="empresaatual" placeholder="Empresa Atual"></asp:TextBox>
+    <asp:TextBox style="margin-left: 39.5%;" class="textos" runat="server" ID="empresaatual" ForeColor="Gray" placeholder="Empresa Atual"></asp:TextBox>
 
-    <asp:DropDownList runat="server" ForeColor="Gray" style="margin-left: 38%;" class="textos" ID="areadeatuacaodrop">
+    <asp:DropDownList runat="server" ForeColor="Gray" style="margin-left: 39.5%;" class="textos" ID="areadeatuacaodrop">
         <asp:ListItem Value="" Text="Area de Atuação"></asp:ListItem>
         <asp:ListItem Value="Engenharia Biomédica" Text="Engenharia Biomédica"></asp:ListItem>
         <asp:ListItem Value="Engenharia Civil" Text="Engenharia Civil"></asp:ListItem>
@@ -27,7 +27,7 @@
         <asp:ListItem Value="Design Gráfico" Text="Design Gráfico"></asp:ListItem>
     </asp:DropDownList>
     
-    <asp:DropDownList runat="server" class="textos" style="margin-left: 38%;" ForeColor="Gray" placeholder="Nome Completo" ID="escolaridadedrop">
+    <asp:DropDownList runat="server" class="textos" style="margin-left: 39.5%;" ForeColor="Gray" placeholder="Nome Completo" ID="escolaridadedrop">
         <asp:ListItem Value="" Text="Nivel de Escolaridade"></asp:ListItem>
         <asp:ListItem Value="Ensino Fundamental" Text="Ensino Fundamental"></asp:ListItem>
         <asp:ListItem Value="Ensino Fundamental Completo" Text="Ensino Fundamental Completo"></asp:ListItem>
@@ -37,7 +37,7 @@
         <asp:ListItem Value="Ensino Superior" Text="Ensino Superior"></asp:ListItem>
     </asp:DropDownList>
     
-    <asp:FileUpload ID="FileUpload2"  class="btn btn-outline-info" style="margin-left: 38%;width:700px; "  AllowMultiple="false" accept="image/*" runat="server" />
+    <asp:FileUpload ID="FileUpload2"  class="btn btn-outline-info" style="margin-left: 39.5%;width:700px; "  AllowMultiple="false" accept="image/*" runat="server" />
 
     <body>
         <p style="color:red;">
@@ -45,6 +45,6 @@
         </p>
     </body>
     <br />
-    <asp:Button runat="server" ID="confirmabtn" class="btn btn-info" OnClick="confirmabtn_Click" Text="Confirmar" style="margin-left:43%;width:150px;height:40px;font-size:17px"/>
+    <asp:Button runat="server" ID="confirmabtn" class="btn btn-info" OnClick="confirmabtn_Click" Text="Confirmar" style="margin-left:44.5%;width:150px;height:40px;font-size:17px"/>
 
 </asp:Content>

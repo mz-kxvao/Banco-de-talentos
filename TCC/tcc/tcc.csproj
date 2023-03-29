@@ -130,6 +130,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="cadastrar.aspx" />
+    <Content Include="cadastrar.css" />
     <Content Include="filtro.css" />
     <Content Include="login.css" />
     <Content Include="Perfil.aspx" />

@@ -40,6 +40,15 @@ namespace tcc {
         protected global::System.Web.UI.WebControls.TextBox senhatxt;
         
         /// <summary>
+        /// Controle lblsenha.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblsenha;
+        
+        /// <summary>
         /// Controle confsenha.
         /// </summary>
         /// <remarks>
