@@ -56,7 +56,7 @@ namespace tcc
                 commando.Parameters.Add(new MySqlParameter("nome", nometxt.Text));
                 commando.Parameters.Add(new MySqlParameter("telefone", telefonetxt.Text));
                 commando.Parameters.Add(new MySqlParameter("email", emailtxt.Text));
-                commando.Parameters.Add(new MySqlParameter("estado", estadotxt.Text));
+                commando.Parameters.Add(new MySqlParameter("estado", estado_drop.SelectedValue));
                 commando.Parameters.Add(new MySqlParameter("cidade", cidadetxt.Text));
                 commando.Parameters.Add(new MySqlParameter("empresaatual", telefonetxt.Text));
                 commando.Parameters.Add(new MySqlParameter("anexo", anexo));

@@ -14,11 +14,44 @@
     <asp:Label runat="server" ID="telefonetxt" Visible="false"></asp:Label>
     <asp:Label runat="server" ID="emailtxt" Visible="false"></asp:Label>
 
-    <asp:TextBox ForeColor="Black" class="texto" runat="server" ID="estadotxt" placeholder="Estado"></asp:TextBox>
+        <asp:DropDownList runat="server" ForeColor="gray" class="texto" ID="estado_drop">
+
+        <asp:ListItem Value="" Text="Estado "></asp:ListItem>
+        <asp:ListItem Value="AC" Text="Acre"></asp:ListItem>
+        <asp:ListItem Value="AL" Text="Alagoas"></asp:ListItem>
+        <asp:ListItem Value="AP" Text="Amapá"></asp:ListItem>
+        <asp:ListItem Value="AM" Text="Amazonas"></asp:ListItem>
+        <asp:ListItem Value="BA" Text="Bahia"></asp:ListItem>
+        <asp:ListItem Value="CE" Text="Ceará"></asp:ListItem>
+        <asp:ListItem Value="DF" Text="Distrito Federal"></asp:ListItem>
+        <asp:ListItem Value="ES" Text="Espírito Santo"></asp:ListItem>
+        <asp:ListItem Value="GO" Text="Goiás"></asp:ListItem>
+        <asp:ListItem Value="MA" Text="Maranhão"></asp:ListItem>
+        <asp:ListItem Value="MT" Text="Mato Grosso"></asp:ListItem>
+        <asp:ListItem Value="MS" Text="Mato Grosso do Sul"></asp:ListItem>
+        <asp:ListItem Value="MG" Text="Minas Gerais"></asp:ListItem>
+        <asp:ListItem Value="PA" Text="Pará"></asp:ListItem>
+        <asp:ListItem Value="PB" Text="Paraíba"></asp:ListItem>
+        <asp:ListItem Value="PR" Text="Paraná"></asp:ListItem>
+        <asp:ListItem Value="PE" Text="Pernambuco"></asp:ListItem>
+        <asp:ListItem Value="PI" Text="Piauí"></asp:ListItem>
+        <asp:ListItem Value="RJ" Text="Rio de Janeiro"></asp:ListItem>
+        <asp:ListItem Value="RN" Text="Rio Grande do Norte"></asp:ListItem>
+        <asp:ListItem Value="RS" Text="Rio Grande do Sul"></asp:ListItem>
+        <asp:ListItem Value="RO" Text="Rondônia"></asp:ListItem>
+        <asp:ListItem Value="RR" Text="Roraima"></asp:ListItem>
+        <asp:ListItem Value="SC" Text="Santa Catarina"></asp:ListItem>
+        <asp:ListItem Value="SP" Text="São Paulo"></asp:ListItem>
+        <asp:ListItem Value="SE" Text="Sergipe"></asp:ListItem>
+        <asp:ListItem Value="TO" Text="Tocantins"></asp:ListItem>
+
+    </asp:DropDownList>
+
+    <%--<asp:TextBox ForeColor="Black" class="texto" runat="server" ID="estadotxt" placeholder="Estado"></asp:TextBox>--%>
     
-    <asp:TextBox ForeColor="Black" class="texto" runat="server" ID="cidadetxt" placeholder="Cidade"></asp:TextBox>
+    <asp:TextBox ForeColor="gray" class="texto" runat="server" ID="cidadetxt" placeholder="Cidade"></asp:TextBox>
    
-    <asp:TextBox ForeColor="Black" class="texto" runat="server" ID="empresaatual" placeholder="Empresa atual"></asp:TextBox>
+    <asp:TextBox ForeColor="gray" class="texto" runat="server" ID="empresaatual" placeholder="Empresa atual"></asp:TextBox>
   
    
      <asp:DropDownList runat="server" ForeColor="Gray" class="texto" ID="escolaridadedrop" >

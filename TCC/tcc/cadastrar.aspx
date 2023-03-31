@@ -20,5 +20,5 @@
 
     <asp:TextBox runat="server" class="texto" ID="confsenha" placeholder="Confirmar Senha" style="margin-top:1%" TextMode="Password"></asp:TextBox>
 
-    <asp:Button runat="server" ID="confisenha" OnClick="confisenha_Click" class="botao" style=" margin-left:38%;" Text="Confirmar" />
+    <asp:Button runat="server" ID="confisenha" OnClick="confisenha_Click" class="botao" style=" margin-left:38%; margin-top:1%;" Text="Confirmar" />
 </asp:Content>

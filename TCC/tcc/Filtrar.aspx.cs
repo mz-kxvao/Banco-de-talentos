@@ -20,7 +20,7 @@ namespace tcc
 
         protected void btnFiltro_Click(object sender, EventArgs e)
         {
-            var clientes = new Negocio.Candidato().Read("", nometxt.Text,emailtxt.Text,areadeatuacaodrop.SelectedValue, escolaridadedrop.SelectedValue, cidadetxt.Text, estadotxt.Text, empresaatual.Text);
+            var clientes = new Negocio.Candidato().Read("", nometxt.Text,emailtxt.Text,areadeatuacaodrop.SelectedValue, escolaridadedrop.SelectedValue, cidadetxt.Text, estado_drop.SelectedValue, empresaatual.Text);
             Session["dados"] = clientes;
             grdClientes.DataSource = clientes;
             grdClientes.DataBind();

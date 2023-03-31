@@ -40,13 +40,13 @@ namespace tcc {
         protected global::System.Web.UI.WebControls.Label emailtxt;
         
         /// <summary>
-        /// Controle estadotxt.
+        /// Controle estado_drop.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox estadotxt;
+        protected global::System.Web.UI.WebControls.DropDownList estado_drop;
         
         /// <summary>
         /// Controle cidadetxt.

@@ -15,7 +15,7 @@
       font-size: 35px;
       font-weight: 400;
       font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
-      margin-top: 5%;
+      
       font-weight: bold ;
     }
     .textos {
@@ -25,7 +25,7 @@
       
       padding: 10px 15px;
       border: 1px solid #ccc;
-      color: #ccc;
+      
       font-family: "Roboto";
       box-sizing: border-box;
       font-size: 20px;
